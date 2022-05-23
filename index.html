@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="center">
+        <link rel="stylesheet" href="formulario.css">
+        <div class="menu">
+            <a href="index.html">Pesquisa</a>
+            <a href="formulario.html">Formulário</a>
+        </div><!--menu-->
+    </div><!--center-->
+    <title>Pesquisa formulário</title>
+</head>
+<body style="white; ">
+    <h1 align="center">Pesquisa formulário</h1>
+    <h2>Grupo:Andreia, Gustavo, Sablina e Thiago</h2>
+    <h2>a) Na tag < input > com atributo type="test", para que serve o atributo "placeholder"?</h2>
+    <p>O atributo input  Placeholder  específica uma dica curta que descreve o valor esperado de um campo de entrada ( um valor de amostra ou uma breve chave descrição do formato esperado )<br>
+        .O Placeholder atributo funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel, email e senha. </p>
+        <br>
+        Ex:
+        <input type="text"
+               name="nome"
+               placeholder="Digite seu nome"
+               id="id_nome"
+               required  >
+
+    <h2>b) Na tag < input > com atributo type ="rádio" ou type ="checkbox", para que serve o atributo " checked"?</h2>    
+    <p>o checked seletor correspondente a cada elemento < input > marcado ( somente para botões de opção e caixas de seleção) e elemento < option >. <BR>
+    Quando tiver o atributo "checked" a caixa já vai vir marcada</p>
+    <br>
+    Ex:
+    <input type="checkbox" id="trabaho" name="trabalho1" value="Trabalha"
+    checked>
+
+    <h2>c) Na tag < input > para que serve o atributo " value"?</h2>
+    <p>O atributo input value=" enviar dados", específica-se o texto que será lido pelo leitor .</p>
+
+    <h2>d) Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um deles fique marcado de cada vez ?</h2>
+    <p> Quando uma opção Radio e marcada , está só será desmarcada quando outra opção RADIO  com mesmo NOME for selecionada.<br> 
+        Ex:<br>
+        <input type="radio" 
+        name="Semestre"
+        value="1°semestre"
+        id="semestre1"
+ >
+ <label for="semestre1">1°</label>      
+ <input type="radio" 
+        name="Semestre"
+        value="2°semestre"
+        id="semestre2"
+ >
+ <label for="semestre2">2°</label>
+ <input type="radio" 
+        name="Semestre"
+        value="3°semestre"
+        id="Semestre3"
+ >
+ <label for="Semestre3">3°</label>      
+ <input type="radio" 
+        name="Semestre"
+        value="4°semestre"
+        id="semestre4"
+        checked
+ >
+ <label for="semestre4">4°</label>      
+ <input type="radio" 
+        name="Semestre"
+        value="5°semestre"
+        id="Semestre5"
+ >
+ <label for="Semestre5">5°</label>
+</fieldset> 
+    
+    <h2>e) Para que serve a tag < label >? Para que serve o atributo "for" nessa tag?</h2>
+    <p> < label > representa uma legenda para um item em uma interface de usuário. Ele pode está associado com um elemento de controle,<br>
+    colocando este dentro do elemento label, ou usando o atributo for. Tal controle e chamado ou controle etiquetado do elemento etiqueta. Uma entrada pode ser associada a diversas etiquetas (< label >s).</p>
+
+    <h2>f) Na tag < option > para que serve o atributo " selected"?</h2>
+    <p>este atributo booleano indicar que várias opções podem ser selecionada de cada vez.</p>
+    <br>
+    Ex:
+    <select name="opcao">
+    <option value="10">HTML</option>
+    <option value="20">JavaScript</option>
+    <option value="30">Phyton</option>
+   </select>
+
+    <h2>g) Nas tegs de formulário para que serve o atributo "required" ?</h2>
+    <p>Esse é um atributo booleano para indicar que um determinado campo de formulário é obrigatório para o envio do mesmo. Ao adicionar esse atributo a um campo de formulário, <br> o navegador obriga a inserir dados naquele campo antes de enviar o formulário.</p>
+<img src="prenchacampo.png">
+<br>
+    <h2>h) Na tag < form > para que serve o atributo "action" ?</h2>
+    <p>O atributo action define o local ( uma URL) em que os dados recolhidos do formulário <br> devem ser enviados</p>
+
+    <h2>i) Na tag < form > para que serve o atributo "method" ?</h2>
+    <p>O atributo method define qual o método HTTP para enviar os dados, ele pode ser ("GET ou POST")  </p>
+
+    <h2>j) Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o valor do atributo "method" na tag < form >?</h2>
+    <p>Anexar os dados do formulário dentro do corpo da solicitação HTTP, os dados do formulário enviado não são mostrados na URL. O POST não tem limitação de tamanho e pode ser <br> usado para enviar grandes quantidades de dados.</p>
+
+    <h2>k) Qual valor deve ser informado no atributo "method" na tag  < form > em um formulátio que sera usado para fazer upload de arquivos ?</h2>
+    <p>O formulário de upload é um formulário prático que permitr aos usuários enviar fotos, documentos ou qualquer outro tipo qualquer outro tipo de servidor e para criar um formulário <br> de upload tem que estabelecer o valor de file (arquivo) para tag (input type=file)</p>
+    <input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+
+</body>
+</html>
